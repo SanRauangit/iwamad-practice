@@ -1,0 +1,32 @@
+/* Custom CSS Box Model & Flexbox Demonstrations */
+
+#profile-card {
+  /* Box Model: Padding demonstration */
+  padding: 1.5rem; 
+  
+  /* Box Model: Margin demonstration */
+  margin: 1rem auto; 
+  
+  /* Box Model: Border demonstration */
+  border: 1px solid #e5e7eb; 
+}
+
+/* Flexbox Layout for Header Info */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Flexbox Layout for Links Row */
+.card-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Highlight style when card is liked */
+.card-liked {
+  border-color: #ec4899 !important;
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.2) !important;
+}

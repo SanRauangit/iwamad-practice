@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-between items-center p-4">
+
+  <header class="w-full text-center py-4">
+    <h1 class="text-2xl font-bold text-gray-800">Student Profile</h1>
+  </header>
+
+  <main class="w-full max-w-md">
+    <div id="profile-card" class="bg-white rounded-xl shadow-md p-6 border border-gray-200 transition-all duration-300">
+      
+      <div class="card-header flex items-center space-x-4 mb-4">
+        <img class="w-20 h-20 rounded-full border-2 border-indigo-500 object-cover" 
+             src="https://via.placeholder.com/150" 
+             alt="Profile Avatar">
+        <div>
+          <h2 class="text-xl font-bold text-gray-900">Rauan Santybayev</h2>
+          <p class="text-indigo-600 text-sm font-medium">IT Management Student</p>
+        </div>
+      </div>
+
+      <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+        Passionate about web development and IT management. Currently learning modern frontend technologies like HTML5, CSS Grid/Flexbox, and JavaScript.
+      </p>
+
+      <div class="card-links flex justify-between items-center border-t pt-4">
+        <a href="mailto:student@university.edu" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">Email Me</a>
+        <a href="https://github.com/SanRauangit" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">GitHub</a>
+        
+        <button id="like-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1 transition">
+          <span id="like-icon">🤍</span>
+          <span id="like-text">Like</span>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full text-center py-4 text-xs text-gray-500">
+    <p>&copy; 2026 Rauan Santybayev. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
